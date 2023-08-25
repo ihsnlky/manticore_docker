@@ -34,7 +34,7 @@ services:
           soft: -1
           hard: -1
       volumes:
+        - ./clickhouse-client.sh:/var/lib/clickhouse-client.sh
         - ./data:/var/lib/manticore
         - ./search:/var/lib/search
         - ./manticore.conf:/etc/manticoresearch/manticore.conf
-        - ./clickhouse-client.sh:/var/lib/clickhouse-client.sh
